@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ToyRoom.iml" filepath="$PROJECT_DIR$/ToyRoom.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/toyroom/toyhouse.iml" filepath="$PROJECT_DIR$/toyroom/toyhouse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toyroom/toyroom.iml" filepath="$PROJECT_DIR$/toyroom/toyroom.iml" />
     </modules>
   </component>
 </project>
