@@ -30,6 +30,19 @@ Shelly库提供了许多方法来构造一个方法链，包括执行不同操�
 
 在创建Domino后，你可以“调用”它来执行指定的操作。当一个业务对象被改变后，你调用对应的Domino，将业务对象传递给它，然后它就一个个执行action序列中的action。
 
+## 与RxJava比较
+
+在开发Shelly库的过程中，我发现了RxJava。于是我研究了并且借鉴了它的思想和实现方法。因此Shelly库和RxJava的风格在某种程度上相似，但它们的思想、实现和用法很不同，将在下面几个方面进行描述：
+
+1. 实现。Shelly库的`Domino`源码和RxJava库的`Observable`源码在某些程度上很像。但是因为Shelly和RxJava库用法不同，所以源码还是存在很多不同的，尤其是，`Domino`有两个泛型参数，并且有一个Tile函数作为它的成员，这个函数在调用后返回一个`Player`。毕竟，正是这些不同才使得Shelly库能工作。
+
+2. 被执行的操作。Shelly库的`Domino`有很多方法和RxJava的`Observable`相似，这些方法用来数据流控制和线程调度。但是，`Domino`有很多方法用来一次性执行不同action，这个特点是RxJava没有的。具体地说，`Domino`的`perform`方法和`Observable`的`subscribe`方法很像。Shelly库中，你可以在方法链后添加多个`perform`方法来使得`Domino`在被调用后执行多个操作，但是RxJava中，你只能在方法链后添加一个`subscribe`方法，因此只能执行一个action。
+
+3. 类似EventBus的特点。Shelly库有一个类似EventBus的特点，允许你注册组件然后让`Domino`对已经注册的组件执行action。RxJava不支持这个特性。
+
+4. 触发时机。`Domino`执行action的时机和`Observable`订阅`Subscriber`的时机不同。Shelly库中，`Domino`在被提交时不会执行任何action。只有在被调用的时候才会执行action。因此你必须先创建并提交`Domino`，一旦`Domino`被提交，它就可以在任何时候被调用，也可以被调用多次。但是RxJava中，一旦`Observable.subscribe()`方法被调用，一切都会立即生效。另外，每次你要执行某个操作，你必须创建`Observable`并且让它订阅`Subscriber`。
+
+
 ## 定义
 
 本节给出了关于Shelly库的技术术语的定义。
