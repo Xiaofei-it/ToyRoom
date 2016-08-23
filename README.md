@@ -1,6 +1,6 @@
 # ToyRoom
 
-A Shelly-based library for business-logic-oriented programming. Shelly plays Domino in ToyRoom.
+A [Shelly](https://github.com/Xiaofei-it/Shelly)-based library for business-logic-oriented programming. [Shelly](https://github.com/Xiaofei-it/Shelly) plays Domino in ToyRoom.
 
 [Readme in Chinese 中文文档](README-ZH-CN.md)
 
@@ -20,17 +20,17 @@ especially for sending multiple requests synchronously or sequentially.
 
 ## Preview
 
-The ToyRoom library is based on the Shelly library, which is a library for business-logic-oriented
+The ToyRoom library is based on the [Shelly](https://github.com/Xiaofei-it/Shelly) library, which is a library for business-logic-oriented
 programming and provides a novel pattern which uses a method chain to illustrate how each component
 varies with a business object.
 
-By the ToyRoom/Shelly library, you can use a method chain in which each method takes an action as an argument,
+By the ToyRoom library, you can use a method chain in which each method takes an action as an argument,
 to create a object named "Domino" which, once invoked, performs each action according to the action
 sequence in the method chain.
 
 Before the introduction, let's see an example first.
 
-Suppose that you want to print the names of all the files in a folder. Using the ToyRoom/Shelly library, you write the
+Suppose that you want to print the names of all the files in a folder. Using the ToyRoom library, you write the
 following to fulfil the requirement:
 
 ```
@@ -63,7 +63,7 @@ Suppose that you want to use Retrofit to send an HTTP request, and
 
 3. If something goes wrong when sending request and an exception is thrown, print the message of the error.
 
-Using the ToyRoom/Shelly library, you write the following to fulfil the above requirement:
+Using the ToyRoom library, you write the following to fulfil the above requirement:
 
 ```
 Shelly.<String>createDomino("Sending request")
@@ -108,12 +108,12 @@ What the code does is simply committing and storing the Domino for later use.
 To make the Domino perform actions, you should invoke the Domino.
 Only after the Domino is invoked will it perform actions.
 
-These are just simple examples. Actually, the ToyRoom/Shelly library is very powerful,
+These are just simple examples. Actually, the ToyRoom library is very powerful,
 which will be introduced in the following sections.
 
 ## Philosophy
 
-This section illustrates a simple explanation of the theory of the ToyRoom/Shelly library.
+This section illustrates a simple explanation of the theory of the ToyRoom library.
 See [THEORY](doc/THEORY.md) for a detailed introduction of the philosophy.
 
 In business-logic-oriented programming, a change of a particular business object may cause changes
@@ -122,14 +122,14 @@ To decrease coupling we usually use listeners (observers) or the event bus, whic
 also effective. However, these techniques have several disadvantages, such as making code difficult
 to maintain and leading to a potential risk of memory leaking.
 
-To solve these problems, I compose the ToyRoom/Shelly library.
-The ToyRoom/Shelly library provides a novel pattern which uses a method chain to illustrate how each
+To solve these problems, I compose the ToyRoom library.
+The ToyRoom library provides a novel pattern which uses a method chain to illustrate how each
 component varies with a business object. In the method chain, each method takes an action which
 represents the change of a particular component. The chain of methods represents all of the changes
 of all of the corresponding components. Thus you can see the change of the whole "world" in a single
 file rather than searching the whole project for the corresponding classes.
 
-By the ToyRoom/Shelly library, you can use a method chain in which each method takes an action as an argument,
+By the ToyRoom library, you can use a method chain in which each method takes an action as an argument,
 to create a object named "Domino" which, once invoked, performs each action according to the action
 sequence in the method chain.
 
@@ -139,12 +139,12 @@ When a business object is changed, you "invoke" the Domino and pass the business
 Then it performs the actions in the action sequence one after the other.
 
 See [THEORY](doc/THEORY.md) for a detailed introduction of the philosophy. Also, it gives the definitions
-of the technical terms with respect to the ToyRoom/Shelly library, such as the Domino and the data flow.
+of the technical terms with respect to the ToyRoom library, such as the Domino and the data flow.
 
 ## Comparison with RxJava
 
-In the development of the ToyRoom/Shelly library, I discovered the RxJava library. Then I researched and
-learned from its philosophy and its implementation. Thus the style of the ToyRoom/Shelly library bears a
+In the development of the ToyRoom library, I discovered the RxJava library. Then I researched and
+learned from its philosophy and its implementation. Thus the style of the ToyRoom library bears a
 rather resemblance to the one RxJava, but their philosophies, implementations and usages are quite different,
 which is described in detail in [THEORY](doc/THEORY.md).
 
@@ -169,7 +169,7 @@ compile 'xiaofei.library:toyroom:0.1.1'
 
 ## Usage
 
-This section illustrates a brief outline of the usage of the ToyRoom/Shelly library. For the details of
+This section illustrates a brief outline of the usage of the ToyRoom library. For the details of
 the usage, please read the articles listed below:
 
 * [BASIC USAGE](doc/USAGE.md), contains the basic usage, including component registration,
@@ -180,11 +180,11 @@ Domino creation and Domino invocation.
 * [DOMINO COMBINATION](doc/DOMINO_COMBINATION.md), illustrates how to merge the outputs of two
 Dominoes and combing two outputs of two Dominoes into one input for the following action.
 
-* [UTILITIES](doc/UTILITIES.md), contains the usage of the utilities provided by the ToyRoom/Shelly library.
+* [UTILITIES](doc/UTILITIES.md), contains the usage of the utilities provided by the ToyRoom library.
 
-* [METHODOLOGY](doc/METHODOLOGY.md), illustrates how to use the ToyRoom/Shelly library in action.
+* [METHODOLOGY](doc/METHODOLOGY.md), illustrates how to use the ToyRoom library in action.
 
-The ToyRoom/Shelly library provides several kinds of Dominoes, including the basic Domino, the Task Domino
+The ToyRoom library provides several kinds of Dominoes, including the basic Domino, the Task Domino
 and the Retrofit Domino.
 
 The basic Domino provides the basic methods for performing various kinds of actions,
@@ -199,7 +199,7 @@ various kinds of actions according to the result or the failure of the request. 
 Retrofit Domino is very useful in the development of an app, which takes many advantages over the other
 architectures for sending HTTP requests.
 
-Also, the ToyRoom/Shelly library provides methods for merging the outputs of two Dominoes and combing two
+Also, the ToyRoom library provides methods for merging the outputs of two Dominoes and combing two
 outputs of two Dominoes into one input for the following action, which is useful especially
 when it comes to the Retrofit Domino.
 These methods allow you to write a Domino which sends two HTTP requests at the same time
@@ -207,10 +207,10 @@ and uses the results of the two requests to perform actions. Also, you can write
 sends an HTTP request and after getting its result, sends another request. These features are inspired
 by RxJava.
 
-Moreover, the ToyRoom/Shelly library provides some useful utilities, such as the stash to store and
+Moreover, the ToyRoom library provides some useful utilities, such as the stash to store and
 get objects and the tuple class to combine several input together.
 
-In summary, the ToyRoom/Shelly library provides a novel pattern for developing a business-logic-oriented app,
+In summary, the ToyRoom library provides a novel pattern for developing a business-logic-oriented app,
 which makes the source code concerning the business logic clear and easy to understand and makes
 the app easy to maintain.
 
