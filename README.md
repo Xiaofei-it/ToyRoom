@@ -30,8 +30,8 @@ sequence in the method chain.
 
 Before the introduction, let's see an example first.
 
-Suppose that you want to print the names of all the files in a folder. Using the ToyRoom/Shelly library,
-you write the following to fulfil the requirement:
+Suppose that you want to print the names of all the files in a folder. Using the ToyRoom/Shelly library, you write the
+following to fulfil the requirement:
 
 ```
 Shelly.<String>createDomino("Print file names")
@@ -141,12 +141,19 @@ Then it performs the actions in the action sequence one after the other.
 See [THEORY](doc/THEORY.md) for a detailed introduction of the philosophy. Also, it gives the definitions
 of the technical terms with respect to the ToyRoom/Shelly library, such as the Domino and the data flow.
 
+## Comparison with RxJava
+
+In the development of the ToyRoom/Shelly library, I discovered the RxJava library. Then I researched and
+learned from its philosophy and its implementation. Thus the style of the ToyRoom/Shelly library bears a
+rather resemblance to the one RxJava, but their philosophies, implementations and usages are quite different,
+which is described in detail in [THEORY](doc/THEORY.md).
+
 ## Downloading
 
 ### Gradle
 
 ```
-compile 'xiaofei.library:shelly:0.2.5-alpha4'
+compile 'xiaofei.library:shelly:0.2.6'
 ```
 
 ### Maven
@@ -155,7 +162,7 @@ compile 'xiaofei.library:shelly:0.2.5-alpha4'
 <dependency>
   <groupId>xiaofei.library</groupId>
   <artifactId>shelly</artifactId>
-  <version>0.2.5-alpha4</version>
+  <version>0.2.6</version>
   <type>pom</type>
 </dependency>
 ```

@@ -107,12 +107,16 @@ ToyRoom/Shelly库提供了一种全新的编程模式，将业务对象的变化
 
 如果要看详细的思想，请看[理论部分](doc/THEORY.md)。这里也会给出关于ToyRoom/Shelly库的许多技术术语的定义，比如Domino和数据流。
 
+## 与RxJava比较
+
+在开发ToyRoom/Shelly库的过程中，我发现了RxJva。然后我研究并学习了它的思想和实现，因此ToyRoom/Shelly库和RxJava风格在某种程度上相似，但它们的思想、实现和用法很不相同，具体细节在[理论部分](doc/THEORY.md)描述.
+
 ## 下载
 
 ### Gradle
 
 ```
-compile 'xiaofei.library:shelly:0.2.5-alpha4'
+compile 'xiaofei.library:shelly:0.2.6'
 ```
 
 ### Maven
@@ -121,7 +125,7 @@ compile 'xiaofei.library:shelly:0.2.5-alpha4'
 <dependency>
   <groupId>xiaofei.library</groupId>
   <artifactId>shelly</artifactId>
-  <version>0.2.5-alpha4</version>
+  <version>0.2.6</version>
   <type>pom</type>
 </dependency>
 ```
@@ -138,7 +142,7 @@ compile 'xiaofei.library:shelly:0.2.5-alpha4'
 
 * [工具类](doc/UTILITIES.md)，包含ToyRoom/Shelly库提供的工具类的用法。
 
-* [Shelly实战](doc/METHODOLOGY.md)，介绍如何在实战中使用ToyRoom/Shelly库。
+* [ToyRoom/Shelly实战](doc/METHODOLOGY.md)，介绍如何在实战中使用ToyRoom/Shelly库。
 
 ToyRoom/Shelly库提供了各种Domino，包括基本Domino、Task Domino和Retrofit Domino。
 
