@@ -153,7 +153,7 @@ which is described in detail in [THEORY](doc/THEORY.md).
 ### Gradle
 
 ```
-compile 'xiaofei.library:shelly:0.2.6'
+compile 'xiaofei.library:toyroom:0.1.1'
 ```
 
 ### Maven
@@ -161,8 +161,8 @@ compile 'xiaofei.library:shelly:0.2.6'
 ```
 <dependency>
   <groupId>xiaofei.library</groupId>
-  <artifactId>shelly</artifactId>
-  <version>0.2.6</version>
+  <artifactId>toyroom</artifactId>
+  <version>0.1.1</version>
   <type>pom</type>
 </dependency>
 ```
