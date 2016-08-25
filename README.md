@@ -25,7 +25,7 @@ programming and provides a novel pattern which uses a method chain to illustrate
 varies with a business object.
 
 By the ToyRoom library, you can use a method chain in which each method takes an action as an argument,
-to create a object named "Domino" which, once invoked, performs each action according to the action
+to create an object named "Domino" which, once invoked, performs each action according to the action
 sequence in the method chain.
 
 Before the introduction, let's see an example first.
@@ -114,7 +114,7 @@ which will be introduced in the following sections.
 ## Philosophy
 
 This section illustrates a simple explanation of the theory of the ToyRoom library.
-See [THEORY](doc/THEORY.md) for a detailed introduction of the philosophy.
+See [THEORY](doc/THEORY.md) for a detailed introduction to the philosophy.
 
 In business-logic-oriented programming, a change of a particular business object may cause changes
 of various components, and the complexity of business logic will increase coupling between components.
@@ -123,14 +123,15 @@ also effective. However, these techniques have several disadvantages, such as ma
 to maintain and leading to a potential risk of memory leaking.
 
 To solve these problems, I compose the ToyRoom library.
-The ToyRoom library provides a novel pattern which uses a method chain to illustrate how each
+The ToyRoom library is based on the [Shelly](https://github.com/Xiaofei-it/Shelly) library,
+which provides a novel pattern which uses a method chain to illustrate how each
 component varies with a business object. In the method chain, each method takes an action which
 represents the change of a particular component. The chain of methods represents all of the changes
 of all of the corresponding components. Thus you can see the change of the whole "world" in a single
 file rather than searching the whole project for the corresponding classes.
 
 By the ToyRoom library, you can use a method chain in which each method takes an action as an argument,
-to create a object named "Domino" which, once invoked, performs each action according to the action
+to create an object named "Domino" which, once invoked, performs each action according to the action
 sequence in the method chain.
 
 After the creation of a Domino, you can "invoke" it to perform each action in the action sequence in
@@ -138,7 +139,7 @@ the method chain.
 When a business object is changed, you "invoke" the Domino and pass the business object to it.
 Then it performs the actions in the action sequence one after the other.
 
-See [THEORY](doc/THEORY.md) for a detailed introduction of the philosophy. Also, it gives the definitions
+See [THEORY](doc/THEORY.md) for a detailed introduction to the philosophy. Also, it gives the definitions
 of the technical terms with respect to the ToyRoom library, such as the Domino and the data flow.
 
 ## Comparison with RxJava
