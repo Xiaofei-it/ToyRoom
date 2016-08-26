@@ -20,7 +20,8 @@ especially for sending multiple requests synchronously or sequentially.
 
 ## Preview
 
-The ToyRoom library is based on the [Shelly](https://github.com/Xiaofei-it/Shelly) library, which is a library for business-logic-oriented
+The ToyRoom library is based on, or is actually a wrapper of,
+the [Shelly](https://github.com/Xiaofei-it/Shelly) library, which is a library for business-logic-oriented
 programming and provides a novel pattern which uses a method chain to illustrate how each component
 varies with a business object.
 
