@@ -116,14 +116,14 @@ ToyRoom库提供了一种全新的编程模式，将业务对象的变化对各�
 ### Gradle
 
 ```
-compile 'xiaofei.library:toyroom:0.1.1'
+compile 'me.ele.android:toyroom:0.1.1'
 ```
 
 ### Maven
 
 ```
 <dependency>
-  <groupId>xiaofei.library</groupId>
+  <groupId>me.ele.android</groupId>
   <artifactId>toyroom</artifactId>
   <version>0.1.1</version>
   <type>pom</type>

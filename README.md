@@ -154,14 +154,14 @@ which is described in detail in [THEORY](doc/THEORY.md).
 ### Gradle
 
 ```
-compile 'xiaofei.library:toyroom:0.1.1'
+compile 'me.ele.android:toyroom:0.1.1'
 ```
 
 ### Maven
 
 ```
 <dependency>
-  <groupId>xiaofei.library</groupId>
+  <groupId>me.ele.android</groupId>
   <artifactId>toyroom</artifactId>
   <version>0.1.1</version>
   <type>pom</type>

@@ -1,11 +1,12 @@
 apply plugin: 'com.android.library'
 
 //TODO Change the package name
+//TODO test two between, delete this,
 ext {
     bintrayRepo = 'maven'
     bintrayName = 'toyroom'
 
-    publishedGroupId = 'xiaofei.library'
+    publishedGroupId = 'me.ele.android'
     libraryName = 'ToyRoom'
     artifact = 'toyroom'
 
