@@ -31,8 +31,8 @@ sequence in the method chain.
 
 Before the introduction, let's see an example first.
 
-Suppose that you want to print the names of all the files in a folder. Using the ToyRoom library, you write the
-following to fulfil the requirement:
+Suppose that you want to print the names of all the files in a folder. Using the ToyRoom library, you
+may write the following to fulfil the requirement:
 
 ```
 Shelly.<String>createDomino("Print file names")
@@ -64,7 +64,7 @@ Suppose that you want to use Retrofit to send an HTTP request, and
 
 3. If something goes wrong when sending request and an exception is thrown, print the message of the error.
 
-Using the ToyRoom library, you write the following to fulfil the above requirement:
+Using the ToyRoom library, you may write the following to fulfil the above requirement:
 
 ```
 Shelly.<String>createDomino("Sending request")
