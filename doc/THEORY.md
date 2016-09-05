@@ -41,11 +41,13 @@ is appended to the chain. When the Domino is invoked (which will be mentioned be
 which is the argument of each method of the method chain, obtains some objects as arguments and then is performed.
 
 More attention should be paid to the input of each action. The first action of the method chain
-takes the business objects as arguments. Then after it is performed, it passes the objects to the
-following action, which is also performed and then passes the objects to the following
-action. Thus the objects are passed between actions until they are passed to an action for
-performing data transformation, which takes the objects as an argument and returns one or more new
-objects. After the transformation, the new objects are passed to the following actions.
+takes the business objects, which are passed in when invoking the Domino, as arguments.
+Then after it is performed, it passes the business objects to the
+following action, which is also performed and then passes the business objects to the following
+action. Thus the business objects are passed between actions until they are passed to an action for
+performing data transformation, which takes the business objects as an argument and returns one or more new
+objects. After the transformation, the new objects are passed to the following actions and
+the old ones are discarded.
 
 Now pay attention to the action. The action can be regarded as a method which takes the objects
 passed to it as input and executes the statements inside it. Also the Shelly library provides
@@ -59,7 +61,7 @@ Also it, as is mentioned above, provides an EventBus-like feature for preforming
 components.
 
 A method chain provides you with a global view of what happens after the change of a business object.
-The return types of the methods of the method chain are the same, which are named "Domino"
+All of the methods of the method chain return the instances of the same class, which is named "Domino"
 in the Shelly library, since it represents a series of actions to perform one after the other,
 as the domino game does.
 
@@ -166,7 +168,7 @@ Then
 Before giving the definition of the "output of an action", the `call` method should be paid more attention
 on. As is mentioned above, actions includes but is not limited to, performing certain operations
 on certain components, producing certain outputs, performing data transformation, and performing
-thread scheduling. The action performing data transformation is called the "lifting actions".
+thread scheduling. Among them, the actions performing data transformation are called the "lifting actions".
 
 The "output of an action" is a group ("output group") of objects, produced in the following way:
 

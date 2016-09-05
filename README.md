@@ -25,7 +25,7 @@ the [Shelly](https://github.com/Xiaofei-it/Shelly) library, which is a library f
 programming and provides a novel pattern which uses a method chain to illustrate how each component
 varies with a business object.
 
-By the ToyRoom library, you can use a method chain in which each method takes an action as an argument,
+With the help of the ToyRoom library, you can use a method chain, in which each method takes an action as an argument,
 to create an object named "Domino" which, once invoked, performs each action according to the action
 sequence in the method chain.
 
@@ -115,7 +115,7 @@ which will be introduced in the following sections.
 ## Philosophy
 
 This section illustrates a simple explanation of the theory of the ToyRoom library.
-See [THEORY](doc/THEORY.md) for a detailed introduction to the philosophy.
+See the [THEORY](doc/THEORY.md) for a detailed introduction to the philosophy.
 
 In business-logic-oriented programming, a change of a particular business object may cause changes
 of various components, and the complexity of business logic will increase coupling between components.
@@ -140,7 +140,7 @@ the method chain.
 When a business object is changed, you "invoke" the Domino and pass the business object to it.
 Then it performs the actions in the action sequence one after the other.
 
-See [THEORY](doc/THEORY.md) for a detailed introduction to the philosophy. Also, it gives the definitions
+See the [THEORY](doc/THEORY.md) for a detailed introduction to the philosophy. Also, it gives the definitions
 of the technical terms with respect to the ToyRoom library, such as the Domino and the data flow.
 
 ## Comparison with RxJava
@@ -148,7 +148,7 @@ of the technical terms with respect to the ToyRoom library, such as the Domino a
 In the development of the ToyRoom library, I discovered the RxJava library. Then I researched and
 learned from its philosophy and its implementation. Thus the style of the ToyRoom library bears a
 rather resemblance to the one RxJava, but their philosophies, implementations and usages are quite different,
-which is described in detail in [THEORY](doc/THEORY.md).
+which is described in detail in the [THEORY](doc/THEORY.md).
 
 ## Downloading
 

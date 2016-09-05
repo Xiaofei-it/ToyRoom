@@ -82,12 +82,12 @@ Shelly.<String>createDomino("Sending request")
 
 一个URL被传入，Retrofit发送HTTP请求，之后根据不同结果执行相应的操作。
 
-代码中有一些线程调度相关的东西，比如`background()`和`uiThread()`。`background()`是说下面的操作在后台执行。`uiThread()`是说下面的操作在主线程（UI线程）执行。
+代码中有一些线程调度相关的东西，比如`background()`和`uiThread()`。`background()`是说后续的action在后台执行。`uiThread()`是说后续的action在主线程（UI线程）执行。
 
 上面的例子中，你可以看出发送HTTP请求后`MainActivity`和`SecondActivity`是如何变化的。我们在一个地方就可以看到整个世界的变化。
 
 
-注意，如果不调用Domino，上面这段代码实际上并不会执行任何操作！这段代码做的只是提交并存储Domino，供以后使用。想要让Domino执行操作，必须调用它。只有调用Domino后，它才会执行操作。
+注意，如果Domino不被调用，上面这段代码实际上并不会执行任何action！这段代码做的只是提交并存储Domino，供以后使用。想要让Domino执行操作，必须调用它。只有调用Domino后，它才会执行操作。
 
 这些只是简单的例子。实际上，ToyRoom库是非常强大的，将在后面几节介绍。
 
@@ -95,7 +95,7 @@ Shelly.<String>createDomino("Sending request")
 
 本节简单介绍ToyRoom库的理论。如果想要看完整版，请查看[理论部分](doc/THEORY.md)。
 
-在面向业务逻辑的编程中，一个特定的业务对象的改变可能会引起各个组件的变化，业务逻辑的复杂性也会增加模块之间的耦合。为了降低耦合，我们通常使用listeners（observers）或者event bus，这些易于使用并且非常有效，但是有一些缺点，比如难以维护，也可能有内存泄漏的风险。
+在面向业务逻辑的编程中，一个特定的业务对象的改变可能会引起各个组件的变化，业务逻辑的复杂性也会增加模块之间的耦合。为了降低耦合，我们通常使用listeners（observers）或者event bus，这些技术易于使用并且非常有效，但是有一些缺点，比如难以维护，也可能有内存泄漏的风险。
 
 为了解决这些问题，我写了ToyRoom库。
 
@@ -109,7 +109,7 @@ ToyRoom库提供了一种全新的编程模式，将业务对象的变化对各�
 
 ## 与RxJava比较
 
-在开发ToyRoom库的过程中，我发现了RxJva。然后我研究并学习了它的思想和实现，因此ToyRoom库和RxJava风格在某种程度上相似，但它们的思想、实现和用法很不相同，具体细节在[理论部分](doc/THEORY.md)描述.
+在开发ToyRoom库的过程中，我发现了RxJva。然后我研究并学习了它的思想和实现，因此ToyRoom库和RxJava风格在某种程度上相似，但它们的思想、实现和用法很不相同，具体细节在[理论部分](doc/THEORY.md)描述。
 
 ## 下载
 
@@ -136,7 +136,7 @@ compile 'me.ele.android:toyroom:0.1.1'
 
 * [基本用法](doc/USAGE.md)，包含基本用法，包括组件注册、Domino创建和Domino调用。
 
-* [DOMINO种类](doc/MORE_DOMINOES.md)，包含不同种类的Domino的用法。
+* [DOMINO种类](doc/MORE_DOMINOES.md)，包含不同种类Domino的用法。
 
 * [组合Domino](doc/DOMINO_COMBINATION.md)，介绍如何合并或组合两个Domino输出。
 
