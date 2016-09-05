@@ -1,6 +1,6 @@
 # More kinds of Dominoes
 
-[Chinese Translation 中文翻译](https://github.com/Xiaofei-it/Shelly/blob/master/doc-zh-cn/MORE_DOMINOES.md)
+[Chinese Translation 中文翻译](https://github.com/eleme/ToyRoom/blob/master/doc-zh-cn/MORE_DOMINOES.md)
 
 The Domino class provides many basic methods. Also you can write derived Dominoes which extend the
 class. In the Shelly library, there are already several kinds of derived Dominoes, which are shown

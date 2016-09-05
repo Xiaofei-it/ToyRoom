@@ -1,6 +1,6 @@
 # Usage
 
-[Chinese Translation 中文翻译](https://github.com/Xiaofei-it/Shelly/blob/master/doc-zh-cn/USAGE.md)
+[Chinese Translation 中文翻译](https://github.com/eleme/ToyRoom/blob/master/doc-zh-cn/USAGE.md)
 
 This article illustrates the usage of the Shelly library. Here I focus on the basic usage including
 component registration, Domino creation and Domino invocation. After reading these, you will have a

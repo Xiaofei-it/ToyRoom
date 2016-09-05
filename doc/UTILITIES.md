@@ -1,6 +1,6 @@
 # Utilities
 
-[Chinese Translation 中文翻译](https://github.com/Xiaofei-it/Shelly/blob/master/doc-zh-cn/UTILITIES.md)
+[Chinese Translation 中文翻译](https://github.com/eleme/ToyRoom/blob/master/doc-zh-cn/UTILITIES.md)
 
 ## Tuple input
 

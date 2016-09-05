@@ -1,6 +1,6 @@
 # Theory
 
-[Chinese Translation 中文翻译](https://github.com/Xiaofei-it/Shelly/blob/master/doc-zh-cn/THEORY.md)
+[Chinese Translation 中文翻译](https://github.com/eleme/ToyRoom/blob/master/doc-zh-cn/THEORY.md)
 
 This article discusses the theory of the Shelly library, including the philosophy and the definitions
 of the technical terms with respect to the Shelly library.

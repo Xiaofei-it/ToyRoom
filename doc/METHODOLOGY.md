@@ -1,6 +1,6 @@
 # Shelly in Action
 
-[Chinese Translation 中文翻译](https://github.com/Xiaofei-it/Shelly/blob/master/doc-zh-cn/METHODOLOGY.md)
+[Chinese Translation 中文翻译](https://github.com/eleme/ToyRoom/blob/master/doc-zh-cn/METHODOLOGY.md)
 
 This article illustrates the methodology of using the Shelly library and how to use the Shelly library
 in action.
