@@ -76,14 +76,19 @@ learned from its philosophy and its implementation. Thus the style of the Shelly
 rather resemblance to the one RxJava, but their philosophies, implementations and usages are quite different,
 which is described from the following aspects:
 
-1. Implementations.
+1. Aims.
+The Shelly library aims to solve the difficulties of maintaining the source code,
+which is caused by the increasing amount of listeners or events used in asynchronous tasks,
+However, RxJava does not solve this problem.
+
+2. Implementations.
 The `Domino` of the Shelly library bears a rather resemblance to the one of the `Observable` of RxJava.
 However, since the usages of the Shelly library and RxJava are different, there exists quite a lot
 of differences between them, especially in that the `Domino` takes two generic type arguments and has
 a `Tile` function as one of its fields, which returns a `Player` after being called. After all,
 it is these differences that make the Shelly library work.
 
-2. Actions performed.
+3. Actions performed.
 The `Domino` of the Shelly library has many methods similar to the ones of the `Observable` of RxJava.
 Such methods are used for data flow control and thread scheduling. However, the `Domino` has many
 `perform` methods used for performing various actions at a time, which is a feature RxJava does not support.
@@ -93,12 +98,14 @@ order to cause the `Domino` to perform multiple actions at a time after being in
 you can append only one `subscribe` method to the method chain in RxJava and thus can perform
 only one action.
 
-3. An EventBus-like feature.
+4. An EventBus-like feature.
 The Shelly library has an EventBus-like feature which allows you to register components
-and then cause the `Domino` to perform actions on the registered components, which RxJava does not
-support.
+and then cause the `Domino` to perform actions on the registered components.
+So you can illustrate the changes of all registered components in a single method chain.
+However, RxJava does not support this feature. If you are using RxJava and want to change many
+components, you have to use EventBus or listeners.
 
-4. Occasions for triggering.
+5. Occasions for triggering.
 The occasion when the `Domino` performs actions and the one when the `Observable`
 subscribes a `Subscriber` are different. In the Shelly library, the `Domino` will not perform any
 actions when it is committed. And only when it is invoked will it perform actions. Thus you have to
