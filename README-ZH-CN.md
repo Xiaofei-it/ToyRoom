@@ -91,7 +91,7 @@ Shelly.<String>createDomino("Sending request")
 
 这些只是简单的例子。实际上，ToyRoom库是非常强大的，将在后面几节介绍。
 
-更多的例子请看[Shelly](https://github.com/Xiaofei-it/Shelly)库的demo和测试用例，以及“用法”一节列出的各个文档。
+更多的例子请看[Shelly](https://github.com/Xiaofei-it/Shelly)库的demo和测试用例，以及下面“用法”一节列出的各个文档。
 
 ## 思想
 
