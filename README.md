@@ -112,6 +112,11 @@ Only after the Domino is invoked will it perform actions.
 These are just simple examples. Actually, the ToyRoom library is very powerful,
 which will be introduced in the following sections.
 
+更多的例子请看[Shelly](https://github.com/Xiaofei-it/Shelly)库的demo和测试用例，以及“用法”一节列出的各个文档。
+
+For more examples, see the demo and test cases of the [Shelly](https://github.com/Xiaofei-it/Shelly)
+library. Also, the "Usage" section in this document lists some documents which contain many examples.
+
 ## Philosophy
 
 This section illustrates a simple explanation of the theory of the ToyRoom library.
