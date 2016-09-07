@@ -115,22 +115,19 @@ ToyRoom库提供了一种全新的编程模式，将业务对象的变化对各�
 
 ## 下载
 
-### Gradle
+下载ToyRoom库：
 
 ```
 compile 'me.ele.android:toyroom:0.1.1'
 ```
 
-### Maven
+如果下载失败，就使用下面这句话：
 
 ```
-<dependency>
-  <groupId>me.ele.android</groupId>
-  <artifactId>toyroom</artifactId>
-  <version>0.1.1</version>
-  <type>pom</type>
-</dependency>
+compile 'xiaofei.library:shelly:0.2.6'
 ```
+
+目前两个库是一样的。我待会检查第一个库无法下载的原因。
 
 ## 用法
 

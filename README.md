@@ -155,21 +155,16 @@ which is described in detail in the [THEORY](doc/THEORY.md).
 
 ## Downloading
 
-### Gradle
+To download the ToyRoom library:
 
 ```
 compile 'me.ele.android:toyroom:0.1.1'
 ```
 
-### Maven
+In case you fail to download the ToyRoom library, use the following instead:
 
 ```
-<dependency>
-  <groupId>me.ele.android</groupId>
-  <artifactId>toyroom</artifactId>
-  <version>0.1.1</version>
-  <type>pom</type>
-</dependency>
+compile 'xiaofei.library:shelly:0.2.6'
 ```
 
 ## Usage
