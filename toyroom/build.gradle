@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/eleme/ToyRoom'
     gitUrl = 'https://github.com/eleme/ToyRoom.git'
 
-    libraryVersion = '0.1.1'
+    libraryVersion = '0.1.2'
 
     developerId = 'Xiaofei-it'
     developerName = 'Eric Zhao'
@@ -32,7 +32,7 @@ android {
         minSdkVersion 8
         targetSdkVersion 23
         versionCode 1
-        versionName "0.1.1"
+        versionName "0.1.2"
     }
     buildTypes {
         release {
@@ -46,7 +46,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'xiaofei.library:shelly:0.2.6'
+    compile 'xiaofei.library:shelly:0.2.8'
 }
 
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'

@@ -158,13 +158,13 @@ which is described in detail in the [THEORY](doc/THEORY.md).
 To download the ToyRoom library:
 
 ```
-compile 'me.ele.android:toyroom:0.1.1'
+compile 'me.ele.android:toyroom:0.1.2'
 ```
 
 In case you fail to download the ToyRoom library, use the following instead:
 
 ```
-compile 'xiaofei.library:shelly:0.2.6'
+compile 'xiaofei.library:shelly:0.2.8'
 ```
 
 ## Usage

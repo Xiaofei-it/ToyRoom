@@ -118,13 +118,13 @@ ToyRoom库提供了一种全新的编程模式，将业务对象的变化对各�
 下载ToyRoom库：
 
 ```
-compile 'me.ele.android:toyroom:0.1.1'
+compile 'me.ele.android:toyroom:0.1.2'
 ```
 
 如果下载失败，就使用下面这句话：
 
 ```
-compile 'xiaofei.library:shelly:0.2.6'
+compile 'xiaofei.library:shelly:0.2.8'
 ```
 
 目前两个库是一样的。我待会检查第一个库无法下载的原因。
